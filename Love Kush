@@ -1,0 +1,19 @@
+# Read in the number of test cases
+t = int(input())
+
+# Loop through each test case
+for i in range(t):
+  # Read in the vote string
+  votes = input()
+
+  # Count the number of votes for Love and Kush
+  love_votes = votes.count('l')
+  kush_votes = votes.count('k')
+
+  # Check if Love has more than twice the number of votes as Kush
+  if love_votes > 2*kush_votes:
+    # Love wins
+    print("Love")
+  else:
+    # Kush wins
+    print("Kush")
